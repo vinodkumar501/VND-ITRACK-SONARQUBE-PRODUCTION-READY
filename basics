@@ -1,0 +1,122 @@
+SONARQUBE --- STATIC CODE ANALYSIS
+
+
+QUALITY CODE?
+  the code having bug free?
+  is it secure ?
+  duplication avoided?
+  tested properly?
+  complex code?
+  easy to integrate with other code?
+  
+All above review by your peer " peer review " 
+May be we can ask our collugues who have best knowledge on programs and he will review and suggest for betterment of code
+if you write long code to review its manually is difficult
+
+================================= Code quality tools ===============================================
+
+By using static code analysis you can improve code quality and reduces lots of time and efforts 
+  
+STATIC CODE ANALYSIS TOOLS:
+--------------------------
+SONARQUBE
+COVERITY
+RAXIS
+VARACODE
+CODESCENE
+
+ADVANATAGE OF SONARQUBE? ( STATIC CODE ANALYSIS OR CODE QUALITY TOOL)
+-----------------------
+
+MAJOR IS?
+
+Quality management tool.
+Apart from code analysis it gather reports from various testing tools and display in nice GUI format.
+
+
+================================ COMPONENTS of sonarqube =======================================
+
+1.Sonarqube server
+
+   Rules : 
+       Instructions which you need to follow while wirting code. 
+   Database : 
+      Rules run on source code ,once analysis is done it store data in database.
+   Web interface: 
+      Once analysis stored in db , trhour ui we can analyse and understand easily
+      
+   Elastic search:
+       helps to search required data from sonarqube db
+       
+   Sonarscanner:
+       Service or agent which runs on system where code exists. 
+       Java code , now you wnat report , you need to install sonarscanner on where source code exists and run scan
+       
+       wherever you have sonarscanner ---> you have source code exist
+     
+-------------------------------------------------------------
+Support For 29 programming languages 
+
+https://www.sonarqube.org/
+For 29 programming languages
+
+can generate code quality report on any of the generated programs
+
+=================> How sonarqube communicate with sonar scanner <==========================================
+
+             rules
+Sonarqube ------------->Sonarscanner(Developer code)
+          <------------
+            report
+SONARSCANNER:
+-> Sonar scanner collects required information from source code.
+-> your source code have sonarscanner.properties  file that  sonarscanner going to collect some info, if doesnot have sonarscanner.properties we should genrate.
+-> Its going to gather applicable rules .( lets java program ) how its know sonar scanner if its a java project?
+   It has that info, depending on that it pull the rules which are applicable for java. 
+-> genrate reports
+-> reports store in sonarqube server db 
+
+
+https://github.com/vinodkumar501/DevOps.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
