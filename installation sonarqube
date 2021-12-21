@@ -16,8 +16,15 @@ Source: https://docs.sonarqube.org/latest/requirements/requirements/
 
 1. Download SonarQube [latest verions](https://www.sonarqube.org/downloads/) on to EC2 instace 
 
+Version: 9.2.4 Release: December 2021
+
+but only install LTS supported version 
+SonarQube 8.9.6 LTS (December 2021)
+
+
    cd /opt  
    wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-x.x.zip  
+    //https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.6.50800.zip
 
 1. extract packages
 
