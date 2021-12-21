@@ -23,6 +23,10 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "5.10.75-79.358.amzn2.x86_64", arch: "amd64", family: "unix"
 
 
+
+https://github.com/vinodkumar501/hello-world.git
+
+
 ====================================================== OR =====================================================
 
 #  Install & configure Maven build tool on Jenkins
