@@ -11,57 +11,6 @@ NOTE: Embedded database should be used for evaluation purposes only
 The embedded database will not scale, it will not support upgrading to newer versions of SonarQube, and there is no support for 
 migrating your data out of it into a different database engine.
 
-Java is pre-requisiste for sonarqube
-
-https://docs.sonarqube.org/latest/setup/install-server/
-https://www.sonarqube.org/success-download-community-edition/
-
-From sonarqube 7 onwards it need java 11 as pre-requisite
-
-================================== INSTALL JAVA-11 ===============================
-
-https://tecadmin.net/install-java-on-amazon-linux/
-
-INSTALL JAVA-11
-
-sudo amazon-linux-extras install java-openjdk11
-java -version
-
-
-================================ INSTAL SONARQUBE USINT ZIP FILE ==================================
-Need to install sonarqube as non root user only, otherwie elastisearch will not up.
-
-https://docs.sonarqube.org/latest/setup/install-server/
-https://www.sonarqube.org/success-download-community-edition/
-
-1.wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.2.3.50713.zip
-2.unzip sonarqube-9.2.3.50713.zip
-3.cd sonarqube-9.2.3.50713
-
-[ec2-user@ip-172-31-10-73 ~]$ cd sonarqube-9.2.3.50713/
-[ec2-user@ip-172-31-10-73 sonarqube-9.2.3.50713]$ ls
-bin  conf  COPYING  data  dependency-license.json  elasticsearch  extensions  lib  logs  temp  web
-
-[ec2-user@ip-172-31-10-73 sonarqube-9.2.3.50713]$ cd bin/
-[ec2-user@ip-172-31-10-73 bin]$ ls
-jsw-license  linux-x86-64  macosx-universal-64  windows-x86-64
-[ec2-user@ip-172-31-10-73 bin]$ cd linux-x86-64/
-
-[ec2-user@ip-172-31-10-73 linux-x86-64]$ ls
-lib  SonarQube.pid  sonar.sh  wrapper
-
-$pwd
-/home/ec2-user/sonarqube-9.2.3.50713/bin/linux-x86-64
-lib  SonarQube.pid  sonar.sh  wrapper
-
-./sonar.sh status
-./sonar.sh start
-./sonar.sh stop
-
-
-Once up login with below port <ip>:9000
-http://44.201.10.5:9000/                         #admin/admin
-
 ================================= how to check the logs ==================================
 
 [ec2-user@ip-172-31-10-73 ~]$ ls
@@ -149,10 +98,8 @@ name: sonarqube-9.2  (any)
 server url : http://44.201.90.55:9000/
 Server authentication token : sonarqube-cred
 
-
-install sonarqube scanner plugin 
-
-and update in gloabl tool configuration in Jenkins UI automqtically.
+-->install sonarqube scanner plugin 
+and update in gloabl tool configuration sonarqube scanner in Jenkins UI automqtically deploy.
 
 ========================================================================================
 
